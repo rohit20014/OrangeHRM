@@ -26,7 +26,35 @@ public class WebElements{
 	
 	@FindBy(xpath="/html/body/div[1]/div[3]/div/div[1]/h1")
 	WebElement textDashboard;
-
+	
+//Add User
+	
+	@FindBy(id="menu_admin_viewSystemUsers")
+	WebElement adminUser;
+	
+	@FindBy(id="btnAdd")
+	WebElement addUser;
+	
+	@FindBy(id="systemUser_userType")
+	WebElement userRole;
+	
+	@FindBy(id="systemUser_employeeName_empName")
+	WebElement empName;
+	
+	@FindBy(id="systemUser_userName")
+	WebElement userName;
+	
+	@FindBy(id="systemUser_status")
+	WebElement status;
+	
+	@FindBy(id="systemUser_password")
+	WebElement pass;
+	
+	@FindBy(id="systemUser_confirmPassword")
+	WebElement confirmpassword;
+	
+	@FindBy(id="btnSave")
+	WebElement saveUser;
 	
 	public WebElements(WebDriver driver ) {
 		PageFactory.initElements(driver, this);

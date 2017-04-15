@@ -2,6 +2,7 @@ package script;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
@@ -12,7 +13,7 @@ public class AddUser{
 	WebElements elements= new WebElements(driver);
 	ExcelReadWrite rw= new ExcelReadWrite();
 
-	@Test(priority = 1)
+	//@Test(priority = 1)
 	//Blank password is provided
   public void invalidLoginBlankPassword() throws InterruptedException {
 	  driver.navigate().refresh();
@@ -30,7 +31,7 @@ public class AddUser{
 	  ExcelReadWrite.setExcel("Pass", 1, 4);
   }
 	
-	@Test(priority=2)
+	//@Test(priority=2)
 	//Blank user name is provided
   public void invalidLoginBlankUsername() throws InterruptedException {
 	  driver.navigate().refresh();
@@ -48,7 +49,7 @@ public class AddUser{
 	  ExcelReadWrite.setExcel("Pass", 2, 4);
   }
 	
-	@Test(priority=3)
+	//@Test(priority=3)
 	//User name and Password are kept blank
 	  public void invalidloginBlank() throws InterruptedException {
 		driver.navigate().refresh();
@@ -63,7 +64,7 @@ public class AddUser{
 		  ExcelReadWrite.setExcel("Pass", 3, 4);
 	  }
 	
-	@Test(priority=4)
+	//@Test(priority=4)
 	//Wrong password is provided
 	 public void ivalidLoginWrongPassword() throws InterruptedException {
 		driver.navigate().refresh();
@@ -84,7 +85,7 @@ public class AddUser{
 	  ExcelReadWrite.setExcel("Pass", 4, 4);
   }
 	
-	@Test(priority=5)
+	//@Test(priority=5)
 	//Wrong user name is provided
 	 public void ivalidLoginWrongUsername() throws InterruptedException {
 		driver.navigate().refresh();
@@ -105,7 +106,7 @@ public class AddUser{
 	  ExcelReadWrite.setExcel("Pass", 5, 4);
   }
 	
-	@Test(priority=6)
+	//@Test(priority=6)
 	//Wrong user name and password is provided
 	 public void ivalidLogin() throws InterruptedException {
 		driver.navigate().refresh();
@@ -154,10 +155,34 @@ public class AddUser{
 		
 	}
 	
+	@Test(priority = 8)
+	//Add USer
+  public void addUser() throws InterruptedException {
+		elements.adminUser.click();
+		elements.addUser.click();
+		select(elements.userRole,"ESS");
+		elements.empName.clear();
+		elements.empName.sendKeys("Fiona Grace");
+		elements.username.clear();
+		elements.userName.sendKeys("rohit123");
+		select(elements.status, "Enabled");
+		elements.pass.clear();
+		elements.pass.sendKeys("eMee@123");
+		elements.confirmpassword.clear();
+		elements.confirmpassword.sendKeys("eMee@123");
+		
+  }
+	
+	public void select(WebElement element, String value){
+		Select select= new Select(element);
+		select.selectByVisibleText(value);
+	}
+	
 	@AfterTest
 	public void teardown()
 	{
 		ExcelReadWrite.writeExcel();
+		driver.close();
 	}
 }
 

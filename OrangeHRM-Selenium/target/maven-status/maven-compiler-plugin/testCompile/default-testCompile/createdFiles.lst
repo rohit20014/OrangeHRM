@@ -1,6 +1,5 @@
 script\AddUser.class
 script\Handler.class
-script\Test.class
 script\WebElements.class
 script\ExcelReadWrite.class
 script\ReadPropFile.class

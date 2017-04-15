@@ -10,10 +10,9 @@ public class Handler {
 	public static WebDriver Instance(String browser) {
 		String browsername=browser;
 		if(browsername.equalsIgnoreCase("Chrome")){
-			System.out.println("chrome");
+			System.out.println("You have choosen chrome!!!! it is not yet configured");
 			}
 		else{
-			System.out.println("here in else");
 			  System.setProperty("webdriver.gecko.driver", "C:/Users/Rohit Singh/Downloads/gecko/geckodriver.exe");
 			driver=new FirefoxDriver();
 			  driver.get(ReadPropFile.properties.getProperty("URL"));

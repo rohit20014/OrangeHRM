@@ -2,40 +2,40 @@
 <testng-results skipped="0" failed="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="34058" started-at="2017-04-15T05:11:31Z" finished-at="2017-04-15T05:12:05Z">
+  <suite name="Suite" duration-ms="33381" started-at="2017-04-15T07:39:14Z" finished-at="2017-04-15T07:39:47Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="34058" started-at="2017-04-15T05:11:31Z" finished-at="2017-04-15T05:12:05Z">
+    <test name="Test" duration-ms="33381" started-at="2017-04-15T07:39:14Z" finished-at="2017-04-15T07:39:47Z">
       <class name="script.AddUser">
-        <test-method status="PASS" signature="invalidLoginBlankPassword()[pri:1, instance:script.AddUser@4b14918a]" name="invalidLoginBlankPassword" duration-ms="5910" started-at="2017-04-14T23:11:31Z" finished-at="2017-04-14T23:11:37Z">
+        <test-method status="PASS" signature="invalidLoginBlankPassword()[pri:1, instance:script.AddUser@53dbe163]" name="invalidLoginBlankPassword" duration-ms="5814" started-at="2017-04-15T01:39:14Z" finished-at="2017-04-15T01:39:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidLoginBlankPassword -->
-        <test-method status="PASS" signature="invalidLoginBlankUsername()[pri:2, instance:script.AddUser@4b14918a]" name="invalidLoginBlankUsername" duration-ms="5123" started-at="2017-04-14T23:11:37Z" finished-at="2017-04-14T23:11:42Z">
+        <test-method status="PASS" signature="invalidLoginBlankUsername()[pri:2, instance:script.AddUser@53dbe163]" name="invalidLoginBlankUsername" duration-ms="4694" started-at="2017-04-15T01:39:20Z" finished-at="2017-04-15T01:39:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidLoginBlankUsername -->
-        <test-method status="PASS" signature="invalidloginBlank()[pri:3, instance:script.AddUser@4b14918a]" name="invalidloginBlank" duration-ms="4740" started-at="2017-04-14T23:11:42Z" finished-at="2017-04-14T23:11:47Z">
+        <test-method status="PASS" signature="invalidloginBlank()[pri:3, instance:script.AddUser@53dbe163]" name="invalidloginBlank" duration-ms="4692" started-at="2017-04-15T01:39:24Z" finished-at="2017-04-15T01:39:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidloginBlank -->
-        <test-method status="PASS" signature="ivalidLoginWrongPassword()[pri:4, instance:script.AddUser@4b14918a]" name="ivalidLoginWrongPassword" duration-ms="5029" started-at="2017-04-14T23:11:47Z" finished-at="2017-04-14T23:11:52Z">
+        <test-method status="PASS" signature="ivalidLoginWrongPassword()[pri:4, instance:script.AddUser@53dbe163]" name="ivalidLoginWrongPassword" duration-ms="4979" started-at="2017-04-15T01:39:29Z" finished-at="2017-04-15T01:39:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ivalidLoginWrongPassword -->
-        <test-method status="PASS" signature="ivalidLoginWrongUsername()[pri:5, instance:script.AddUser@4b14918a]" name="ivalidLoginWrongUsername" duration-ms="4410" started-at="2017-04-14T23:11:52Z" finished-at="2017-04-14T23:11:56Z">
+        <test-method status="PASS" signature="ivalidLoginWrongUsername()[pri:5, instance:script.AddUser@53dbe163]" name="ivalidLoginWrongUsername" duration-ms="4459" started-at="2017-04-15T01:39:34Z" finished-at="2017-04-15T01:39:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ivalidLoginWrongUsername -->
-        <test-method status="PASS" signature="ivalidLogin()[pri:6, instance:script.AddUser@4b14918a]" name="ivalidLogin" duration-ms="4405" started-at="2017-04-14T23:11:56Z" finished-at="2017-04-14T23:12:00Z">
+        <test-method status="PASS" signature="ivalidLogin()[pri:6, instance:script.AddUser@53dbe163]" name="ivalidLogin" duration-ms="4251" started-at="2017-04-15T01:39:38Z" finished-at="2017-04-15T01:39:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ivalidLogin -->
-        <test-method status="PASS" signature="login()[pri:7, instance:script.AddUser@4b14918a]" name="login" duration-ms="4361" started-at="2017-04-14T23:12:00Z" finished-at="2017-04-14T23:12:05Z">
+        <test-method status="PASS" signature="login()[pri:7, instance:script.AddUser@53dbe163]" name="login" duration-ms="4357" started-at="2017-04-15T01:39:43Z" finished-at="2017-04-15T01:39:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:script.AddUser@4b14918a]" name="teardown" is-config="true" duration-ms="66" started-at="2017-04-14T23:12:05Z" finished-at="2017-04-14T23:12:05Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:script.AddUser@53dbe163]" name="teardown" is-config="true" duration-ms="123" started-at="2017-04-15T01:39:47Z" finished-at="2017-04-15T01:39:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
